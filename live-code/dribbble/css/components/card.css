@@ -1,0 +1,31 @@
+.card{
+	background-color: white;
+	padding: 15px;	
+}
+
+.card-image{
+	background-size: cover;
+}
+
+.card-hover{
+	opacity: 0;
+	transition: background-color 300ms, opacity 300ms;
+}
+
+.card:hover .card-hover{
+	opacity: 0.9;
+	background-color: white;
+}
+
+.card-hover h2{
+	margin-top: 0;
+}
+
+.card-share{
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-share-counters .fa{
+	padding: 0 10px;
+}

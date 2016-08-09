@@ -1,0 +1,15 @@
+<h1>My task manager</h1>
+
+  <% @tasks.each do |task| %>
+    <p><%= task.name %></p>
+    <p><%= task.status %></p>
+
+    <%= link_to "View this task", task_path(task) %>
+    <%= link_to "Edit", edit_task_path(task) %>
+    <%= link_to "Remove", task_path(task),
+    method: :delete,
+    data: { confirm: "Are you sure?" } %>
+  <% end %>
+
+
+  <%= link_to "Create a new one", new_task_path %>
